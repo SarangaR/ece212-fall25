@@ -1,0 +1,17 @@
+
+module main(
+    input [7:0] sw,
+    input [3:0] btn,
+    output [6:0] led
+);
+    /*
+    wire [2:0] seg;
+    assign led[0] = seg[0];
+    assign led[3] = seg[2];
+    assign led[6] = seg[1];
+    proj1 u1(.a(btn[2:0]), .f(seg));
+    */
+
+    seven_seg u1(.bcd(sw[3:0]), .segs(led));
+
+endmodule
