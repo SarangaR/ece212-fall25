@@ -11,7 +11,8 @@ module main(
     assign led[6] = seg[1];
     proj1 u1(.a(btn[2:0]), .f(seg));
     */
-
-    seven_seg u1(.bcd(sw[3:0]), .segs(led));
+    wire [3:0] result;
+    seven_seg u1(.bcd(result), .segs(led));
+    alu u2(.a(sw[7:4]), .b(sw[3:0]), .op(btn[1:0]), .result(result));
 
 endmodule
