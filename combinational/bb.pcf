@@ -17,3 +17,10 @@ set_io btn[0] 48
 set_io btn[1] 3
 set_io btn[2] 4
 set_io btn[3] 44
+set_io blue 26
+set_io green 25
+set_io red 23
+set_io clk_12m 20
+set_io led_g 39
+set_io led_b 40
+set_io led_r 41
