@@ -1,6 +1,6 @@
 
 module nzp (
-    input [3:0] bus,
+    input signed [3:0] bus,
     output reg n, z, p
 );
 
