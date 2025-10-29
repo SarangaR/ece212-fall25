@@ -1,0 +1,5 @@
+hardware.*
+abc.history
+.sconsign.dblite
+*.vcd
+*.out
